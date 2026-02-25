@@ -67,7 +67,7 @@ document.getElementById('debug-btn').addEventListener('click', async () => {
 
   const apiUrl = window.location.hostname.includes("localhost")
     ? "http://localhost:8002/debug"
-    : "https://ai-code-debugger-akshayy-2326.onrender.com/debug";  // Corrected here
+    : "https://ai-code-debugger-akshayy-23266.onrender.com";  // Corrected here
 
   try {
     const response = await fetch(apiUrl, {
@@ -85,3 +85,5 @@ document.getElementById('debug-btn').addEventListener('click', async () => {
     console.error(err);
   }
 }); 
+
+// node server.js
