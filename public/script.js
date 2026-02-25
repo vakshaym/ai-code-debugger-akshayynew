@@ -65,10 +65,10 @@ document.getElementById('debug-btn').addEventListener('click', async () => {
   const code = editor.getValue();
   const language = document.getElementById('language').value;
 
-  const apiUrl = window.location.hostname.includes("localhost")
-    ? "http://localhost:8002/debug"
-    : "https://ai-code-debugger-akshayy-23266.onrender.com";  // Corrected here
-
+//  const apiUrl = window.location.hostname.includes("localhost")
+  //  ? "http://localhost:8002/debug"
+    //: "https://ai-code-debugger-akshayy-23266.onrender.com";  // Corrected here
+    const apiUrl = "/debug";
   try {
     const response = await fetch(apiUrl, {
       method: 'POST',
